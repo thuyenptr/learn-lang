@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_multiple_files=true;
+package firstapp.proto;
+
+import "account.proto";
+import "common.proto";
+
+service AccountSystem {
+    rpc CreateAccount(CreateAccountRequest) returns (CreateAccountResponse) {}
+    rpc QueryAccount(AccountQueryRequest) returns (AccountResponse) {}
+    rpc ping(Ping) returns (Pong) {}
+}
