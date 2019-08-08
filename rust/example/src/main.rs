@@ -82,21 +82,6 @@ fn main() {
 
     println!("{}, {}, {}", str, num, check);
 
-    #[allow(dead_code)] // => disable code warning
-    struct Structure(i32); // struct like tuple
-
-    struct Person<'a> {
-        name: &'a str,
-        age: u8,
-    }
-
-    let person = Person {
-        name: "Bill",
-        age: 22,
-    };
-
-    println!("Person: name {}, age {}", person.name, person.age);
-
     #[allow(dead_code)]
     enum LANGUAGES {Java, C, Rust}
     let _enum_lang = LANGUAGES::Java;
@@ -147,6 +132,62 @@ fn main() {
     blog.publish();
     forum.publish();
     blog.delete();
+
+    #[allow(dead_code)] // => disable code warning
+    struct Structure(i32); // struct like tuple
+
+    struct Person<'a> {
+        name: &'a str,
+        age: u8,
+    }
+
+    let person = Person {
+        name: "Bill",
+        age: 22,
+    };
+
+    println!("Person: name {}, age {}", person.name, person.age);
+
+    #[allow(dead_code)]
+    struct Bottle {
+        year: i32,
+        name: &'static str,
+    }
+
+    let my_bottle = Bottle {
+        year: 2019,
+        name: "Self",
+    };
+
+    let mut your_bottle = my_bottle;
+
+//    println!("My bottle {}", my_bottle.name);
+    println!("Your bottler {}", your_bottle.name);
+    your_bottle.name = "Me";
+    println!("Your bottler {}", your_bottle.name);
+
+    let your_bottle_1 = &mut your_bottle;
+    your_bottle_1.name = "hi";
+    println!("Your bottle {}", your_bottle_1.name);
+
+    your_bottle.name = "hello";
+
+    println!("My bottle {}", your_bottle.name);
+
+    let s1 = String::from("Hello");
+    let len = calculate_length(s1.as_str());
+    println!("Length of {} is {}", s1, len);
+
+    let len2 = calculate_length_not_ref(s1);
+    println!("Len of is {}", len2);
+}
+
+fn calculate_length(str: &str) -> usize {
+    str.len()
+}
+
+fn calculate_length_not_ref(str: String) -> usize {
+    str.len()
 }
 
 trait Web {
