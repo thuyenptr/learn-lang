@@ -1,5 +1,7 @@
 use std::f32::consts;
 use std::io::{stdin};
+mod single_module;
+mod sub_module;
 
 static _PI:f32 = 3.14;
 static _NAME:&'static str = "Constant";
@@ -180,6 +182,8 @@ fn main() {
 
     let len2 = calculate_length_not_ref(s1);
     println!("Len of is {}", len2);
+
+    sub_module::bar::bar();
 }
 
 fn calculate_length(str: &str) -> usize {
