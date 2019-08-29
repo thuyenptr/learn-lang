@@ -1,0 +1,15 @@
+syntax="proto3";
+package api;
+
+message Ping {
+    string timestamp = 1;
+}
+
+message Pong {
+    string timestamp = 1;
+    string serviceName = 2;
+}
+
+service TiKVService {
+    rpc ping(Ping) returns (Pong) {}
+}
