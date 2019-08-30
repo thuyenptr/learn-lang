@@ -2,7 +2,6 @@ package main
 
 import (
 	"container/heap"
-	"github.com/sirupsen/logrus"
 )
 
 type MergeItem interface {
@@ -72,25 +71,25 @@ func (i *item) GetValue() int64 {
 }
 
 func main() {
-	merger := NewHeapStrategy()
-
-	i1 := &item{
-		10,
-	}
-	i2 := &item{
-		1,
-	}
-	i3 := &item{
-		-1,
-	}
-	i4 := &item{
-		12,
-	}
-
-	merger.Push(i1)
-	merger.Push(i2)
-	merger.Push(i3)
-	merger.Push(i4)
-
-	logrus.Info(merger.Pop())
+	//merger := NewHeapStrategy()
+	//
+	//i1 := &item{
+	//	10,
+	//}
+	//i2 := &item{
+	//	1,
+	//}
+	//i3 := &item{
+	//	-1,
+	//}
+	//i4 := &item{
+	//	12,
+	//}
+	//
+	//merger.Push(i1)
+	//merger.Push(i2)
+	//merger.Push(i3)
+	//merger.Push(i4)
+	//
+	//logrus.Info(merger.Pop())
 }

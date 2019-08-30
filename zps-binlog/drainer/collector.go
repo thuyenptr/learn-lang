@@ -6,16 +6,28 @@ import (
 	"sync"
 )
 
+
+type notifyResult struct {
+	err error
+	wg sync.WaitGroup
+}
+
 type Collector struct {
 	merger *Merger
+	pumps     map[string]*Pump
 	cp checkpoint.CheckPoint
+	errCh chan error
+	// notifyChan notifies the new pump is coming
+	notifyChan chan *notifyResult
 }
 
 func NewCollector(cpt checkpoint.CheckPoint) *Collector {
-	merger := NewMerger(cpt.TS())
 	return &Collector{
-		merger: merger,
+		pumps: make(map[string]*Pump),
+		errCh:           make(chan error, 10),
+		merger: NewMerger(cpt.TS()),
 		cp: cpt,
+		notifyChan: make(chan *notifyResult),
 	}
 }
 
@@ -71,8 +83,13 @@ func (c *Collector) updateCollectStatus(synced bool) {
 }
 
 func (c *Collector) handlePumpStatusUpdate(ctx context.Context) {
-	//var commitTS int64 = 0
-	//c.merger.AddSource(MergeSource {ID: "dummy", Source: p.PullBinlog(ctx, commitTS)})
+	commitTS := c.merger.GetLatestTS()
+	p := NewPump("fakenode", "127.0.0.1:1234", 1234, commitTS, c.errCh)
+	c.merger.AddSource(MergeSource{
+		ID: "fake-node",
+		Source: p.PullBinlog(ctx, commitTS),
+	})
+
 }
 
 func (c *Collector) syncBinlog(item *binlogItem) {

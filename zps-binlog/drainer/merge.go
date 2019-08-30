@@ -1,6 +1,9 @@
 package drainer
 
-import "sync"
+import (
+	"sync"
+	"sync/atomic"
+)
 
 type MergeItem interface {
 	GetCommitTs() int64
@@ -35,6 +38,9 @@ type Merger struct {
 	output chan MergeItem
 
 	latestTS int64
+
+	close int32
+	pause int32
 }
 
 type MergeSource struct {
@@ -70,4 +76,25 @@ func (m *Merger) AddSource(source MergeSource) {
 
 func (m *Merger) Output() chan MergeItem {
 	return m.output
+}
+
+// GetLatestTS returns the last binlog's ts send to syncer
+func (m *Merger) GetLatestTS() int64 {
+	m.RLock()
+	defer m.RUnlock()
+	return m.latestTS
+}
+
+// Stop stops merge
+func (m *Merger) Stop() {
+	atomic.StoreInt32(&m.pause, 1)
+}
+
+// Continue continue merge
+func (m *Merger) Continue() {
+	atomic.StoreInt32(&m.pause, 0)
+}
+
+func (m *Merger) isPaused() bool {
+	return atomic.LoadInt32(&m.pause) == 1
 }

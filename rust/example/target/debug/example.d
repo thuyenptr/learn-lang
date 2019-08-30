@@ -1,1 +1,1 @@
-/Users/thuyenpt/Desktop/study/rust/example/target/debug/example.dSYM: /Users/thuyenpt/Desktop/study/rust/example/src/main.rs
+/Users/thuyenpt/Desktop/study/learn-lang/rust/example/target/debug/example.dSYM: /Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/main.rs /Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/single_module.rs /Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/sub_module/bar.rs /Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/sub_module/foo.rs /Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/sub_module/mod.rs

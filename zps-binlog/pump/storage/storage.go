@@ -50,12 +50,14 @@ type Append struct {
 	metadata *leveldb.DB
 	sorter *sorter
 	writeCh  chan *request
+	latestTs int64
+
+	headPointer   valuePointer
+	handlePointer valuePointer
 
 	gcTS        int64
 	maxCommitTS int64
 
-	headPointer   valuePointer
-	handlePointer valuePointer
 
 	sortItems chan sortItem
 	handleSortItemQuit chan struct{}
@@ -112,7 +114,10 @@ func NewAppend(dir string) (append *Append, err error) {
 	append.wg.Add(1)
 	go append.writeToSorter(append.writeToKV(toKV))
 
-	return append, nil
+	append.wg.Add(1)
+	go append.updateStatus()
+
+	return
 }
 
 func (a *Append) readInt64(key []byte) (int64, error) {
@@ -300,4 +305,18 @@ func (a *Append) GetBinlog(ts int64) (binlog *pb.Binlog, err error) {
 
 func (a *Append) PullCommitBinlog(ctx context.Context, last int64) <-chan []byte {
 	panic("implement me")
+}
+
+func (a *Append) updateStatus() {
+	defer a.wg.Done()
+
+	updateLatestTicker := time.NewTicker(time.Second)
+	updateLatest := updateLatestTicker.C
+
+	for {
+		select {
+		case <-updateLatest:
+			// TODO: get latest timestamp from PD
+		}
+	}
 }
