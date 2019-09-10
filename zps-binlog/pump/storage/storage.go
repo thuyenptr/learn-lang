@@ -5,6 +5,8 @@ import (
 	"encoding/binary"
 	pb "github.com/billhcmus/zps-binlog/proto"
 	"github.com/pingcap/errors"
+	"github.com/pingcap/tidb/kv"
+	"github.com/pingcap/tidb/store/tikv"
 	"github.com/sirupsen/logrus"
 	"github.com/syndtr/goleveldb/leveldb"
 	"go.uber.org/zap"
@@ -71,8 +73,13 @@ type Append struct {
 	wg sync.WaitGroup
 }
 
-func NewAppend(dir string) (append *Append, err error) {
-	metadata, err := openMetadataDB(dir)
+// NewAppend returns a instance of Append
+func NewAppend(dir string, options *Options) (append *Append, err error) {
+	return NewAppendWithResolver(dir, options, nil, nil)
+}
+
+func NewAppendWithResolver(dir string, options *Options, tiStore kv.Storage, resolver *tikv.LockResolver) (append *Append, err error) {
+	metadata, err := openMetadataDB(dir, options.KVConfig)
 	if err != nil {
 		return nil, errors.Trace(err)
 	}

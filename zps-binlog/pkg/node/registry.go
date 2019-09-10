@@ -15,13 +15,13 @@ package node
 
 import (
 	"encoding/json"
+	"github.com/billhcmus/zps-binlog/pkg/etcd"
 	"path"
 	"strings"
 	"time"
 
 	"github.com/pingcap/errors"
 	"github.com/pingcap/log"
-	"github.com/pingcap/tidb-binlog/pkg/etcd"
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
 )

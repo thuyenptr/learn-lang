@@ -7,6 +7,16 @@ import (
 	"sync"
 )
 
+type Options struct {
+	ValueLogFileSize          int64
+	Sync                      bool
+	KVChanCapacity            int
+	SlowWriteThreshold        float64
+	StopWriteAtAvailableSpace uint64
+
+	KVConfig *KVConfig
+}
+
 type request struct {
 	startTS  int64
 	commitTS int64

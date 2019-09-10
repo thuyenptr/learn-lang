@@ -1,20 +1,20 @@
-package pump
+package main
 
 import (
-	pb "github.com/billhcmus/zps-binlog/proto"
-	"github.com/billhcmus/zps-binlog/pump"
+	"fmt"
 	"github.com/sirupsen/logrus"
 	"os"
-	"time"
+	"runtime"
 )
 
 func init() {
-	f, _ := os.OpenFile("log/zps-binlog.log", os.O_RDWR | os.O_CREATE, 0664)
+	f, _ := os.OpenFile("log/zps-binlog.log", os.O_RDWR|os.O_CREATE, 0664)
 	logrus.SetLevel(logrus.DebugLevel)
 	logrus.SetOutput(f)
 }
 
 func main() {
+	runtime.GOMAXPROCS(runtime.NumCPU())
 	//append, err := storage.NewAppend("/tmp/leveldb-zps")
 	//if err != nil {
 	//	logrus.Fatal(err)
@@ -34,25 +34,27 @@ func main() {
 	//		}
 	//	}
 	//}()
-	server := pump.NewServer()
+	//server := pump.NewServer()
+	//
+	//Pblog := &pb.Binlog{
+	//	Tp: pb.BinlogType_Prewrite,
+	//	StartTs: 1234,
+	//}
+	//
+	//Cblog := &pb.Binlog{
+	//	Tp: pb.BinlogType_Commit,
+	//	StartTs: 1234,
+	//	CommitTs: 1239,
+	//}
+	//
+	//server.WriteBinlogTest(Pblog)
+	//
+	//time.Sleep(5 * time.Second)
+	//
+	//server.WriteBinlogTest(Cblog)
+	//select {
+	//
+	//}
 
-	Pblog := &pb.Binlog{
-		Tp: pb.BinlogType_Prewrite,
-		StartTs: 1234,
-	}
-
-	Cblog := &pb.Binlog{
-		Tp: pb.BinlogType_Commit,
-		StartTs: 1234,
-		CommitTs: 1239,
-	}
-
-	server.WriteBinlogTest(Pblog)
-
-	time.Sleep(5 * time.Second)
-
-	server.WriteBinlogTest(Cblog)
-	select {
-
-	}
+	fmt.Print("hello")
 }
