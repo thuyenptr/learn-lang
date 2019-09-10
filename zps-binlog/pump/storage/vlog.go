@@ -7,10 +7,6 @@ import (
 	"sync"
 )
 
-type valuePointer struct {
-	Fid    uint32
-	Offset int64
-}
 type request struct {
 	startTS  int64
 	commitTS int64
@@ -22,12 +18,21 @@ type request struct {
 	err          error
 }
 
-type valueLog struct {
+func (r *request) ts() int64 {
+	if r.tp == pb.BinlogType_Prewrite {
+		return r.startTS
+	}
 
+	return r.commitTS
+}
+
+type valuePointer struct {
+	Fid    uint32
+	Offset int64
 }
 
 func (vp *valuePointer) MarshalBinary() (data []byte, err error) {
-	data = make ([]byte, 12)
+	data = make([]byte, 12)
 	binary.LittleEndian.PutUint32(data, vp.Fid)
 	binary.LittleEndian.PutUint64(data[4:], uint64(vp.Offset))
 	return
@@ -40,4 +45,7 @@ func (vp *valuePointer) UnmarshalBinary(data []byte) error {
 	vp.Fid = binary.LittleEndian.Uint32(data)
 	vp.Offset = int64(binary.LittleEndian.Uint64(data[4:]))
 	return nil
+}
+
+type valueLog struct {
 }

@@ -7,7 +7,6 @@ import (
 	"github.com/pingcap/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/syndtr/goleveldb/leveldb"
-	"github.com/syndtr/goleveldb/leveldb/opt"
 	"go.uber.org/zap"
 	"sync"
 	"time"
@@ -27,7 +26,8 @@ var (
 	// save valuePointer headPointer, for binlog in vlog not after headPointer, we have save it in metadata db
 	// at start up, we can scan the vlog from headPointer and save the ts -> valuePointer to metadata db
 	headPointerKey = []byte("!binlog!headPointer")
-
+	// If the kv channel blocks for more than this value, turn on the slow chaser
+	slowChaserThreshold = 3 * time.Second
 	// Values of handlePointer and MaxCommitTS will be saved at most once per interval
 	handlePtrSaveInterval = time.Second
 )
@@ -35,8 +35,12 @@ var (
 type Storage interface {
 	WriteBinLog(binlog *pb.Binlog) error
 
-	// delete
+	// delete <= ts
 	GC(ts int64)
+	GetGCTS() int64
+
+	// AllMatched return if all the P-binlog have the matching C-binlog
+	AllMatched() bool
 
 	MaxCommitTS() int64
 
@@ -44,11 +48,14 @@ type Storage interface {
 	GetBinlog(ts int64) (binlog *pb.Binlog, err error)
 	// PullCommitBinlog return the chan to consume the binlog
 	PullCommitBinlog(ctx context.Context, last int64) <-chan []byte
+
+	Close() error
 }
 
 type Append struct {
+	dir      string
 	metadata *leveldb.DB
-	sorter *sorter
+	sorter   *sorter
 	writeCh  chan *request
 	latestTs int64
 
@@ -58,8 +65,7 @@ type Append struct {
 	gcTS        int64
 	maxCommitTS int64
 
-
-	sortItems chan sortItem
+	sortItems          chan sortItem
 	handleSortItemQuit chan struct{}
 
 	wg sync.WaitGroup
@@ -74,8 +80,8 @@ func NewAppend(dir string) (append *Append, err error) {
 	writeCh := make(chan *request, chanCapacity)
 
 	append = &Append{
-		metadata: metadata,
-		writeCh:  writeCh,
+		metadata:  metadata,
+		writeCh:   writeCh,
 		sortItems: make(chan sortItem, 1024),
 	}
 
@@ -103,7 +109,7 @@ func NewAppend(dir string) (append *Append, err error) {
 
 	append.handleSortItemQuit = append.handleSortItem(append.sortItems)
 	sorter := newSorter(func(item sortItem) {
-		logrus.Info("maxTSItemCB: sorter get item",  item)
+		logrus.Info("maxTSItemCB: sorter get item", item)
 		append.sortItems <- item
 	})
 
@@ -164,7 +170,7 @@ func (a *Append) readPointer(key []byte) (valuePointer, error) {
 //	}
 //}
 
-func (a *Append) handleSortItem(items <- chan sortItem) (quit chan struct{}) {
+func (a *Append) handleSortItem(items <-chan sortItem) (quit chan struct{}) {
 	logrus.Info("handleSortItem invoke...")
 	quit = make(chan struct{})
 	go func() {
@@ -209,7 +215,7 @@ func (a *Append) persistHandlePointer(item sortItem) error {
 func (a *Append) Close() error {
 	logrus.Info("Close close append")
 	close(a.sortItems)
-	<- a.handleSortItemQuit
+	<-a.handleSortItemQuit
 
 	err := a.metadata.Close()
 	if err != nil {
@@ -265,12 +271,6 @@ func (a *Append) writeToKV(reqs chan *request) chan *request {
 
 	return done
 }
-
-func openMetadataDB(kvDir string) (*leveldb.DB, error) {
-	o := opt.Options{}
-	return leveldb.OpenFile(kvDir, &o)
-}
-
 
 func (a *Append) WriteBinLog(binlog *pb.Binlog) error {
 	a.writeBinlog(binlog)
