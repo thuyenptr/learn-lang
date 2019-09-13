@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/billhcmus/go-channel/merger"
+	"github.com/sirupsen/logrus"
 	"sync"
 )
 
@@ -46,4 +48,28 @@ func main() {
 	for i := 1; i < 5; i++ {
 		handler.convertValueToRequest(i)
 	}
+}
+
+func main1() {
+	merge := merger.NewHeapStrategy()
+
+	i1 := &merger.Item{
+		Value: 10,
+	}
+	i2 := &merger.Item{
+		Value: 1,
+	}
+	i3 := &merger.Item{
+		Value: -1,
+	}
+	i4 := &merger.Item{
+		Value: 12,
+	}
+
+	merge.Push(i1)
+	merge.Push(i2)
+	merge.Push(i3)
+	merge.Push(i4)
+
+	logrus.Info(merge.Pop())
 }
