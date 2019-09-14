@@ -1,6 +1,9 @@
 package merger
 
-import "container/heap"
+import (
+	"container/heap"
+	"github.com/sirupsen/logrus"
+)
 
 /**
  * Created by thuyenpt
@@ -70,4 +73,28 @@ type Item struct {
 
 func (i *Item) GetValue() int64 {
 	return i.Value
+}
+
+func main() {
+	merge := NewHeapStrategy()
+
+	i1 := &Item{
+		Value: 10,
+	}
+	i2 := &Item{
+		Value: 1,
+	}
+	i3 := &Item{
+		Value: -1,
+	}
+	i4 := &Item{
+		Value: 12,
+	}
+
+	merge.Push(i1)
+	merge.Push(i2)
+	merge.Push(i3)
+	merge.Push(i4)
+
+	logrus.Info(merge.Pop())
 }
