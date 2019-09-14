@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/billhcmus/go-channel/merger"
-	"github.com/sirupsen/logrus"
 	"sync"
 	"time"
 )
