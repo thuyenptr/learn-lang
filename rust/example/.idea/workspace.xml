@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/src/restaurant/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f0bb5d7-40b0-4449-86d5-4be9cd863a7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/string_utils/calculation.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/string_utils/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/single_module.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/single_module.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sub_module/foo.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sub_module/foo.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/.fingerprint/example-8a2ac1277dc26c8d/dep-bin-example-8a2ac1277dc26c8d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/.fingerprint/example-8a2ac1277dc26c8d/dep-bin-example-8a2ac1277dc26c8d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/example-8a2ac1277dc26c8d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/example-8a2ac1277dc26c8d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/example-8a2ac1277dc26c8d.d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/example-8a2ac1277dc26c8d.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/example-8a2ac1277dc26c8d.dSYM/Contents/Resources/DWARF/example-8a2ac1277dc26c8d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/example-8a2ac1277dc26c8d.dSYM/Contents/Resources/DWARF/example-8a2ac1277dc26c8d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/example" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/example.d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/example.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/14f2inw7neiseh85.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/15s1yksopc1n2h1y.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/17c7wava7vlemrt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1fmtz1nwxqieuo8s.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1itjfovpmutyn9ig.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1j6fnnydn3u8jbvl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1lne2eeoq3x1ui2n.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1qebc4m4cp4h3ls4.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1rsyy7xn9jkocnxd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1w1sd4jv5pollcth.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1wua4g2g85erocvx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1y0c5cfbi4j6knjg.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/1zhrfznlg6ptzx7q.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/27sg73kn1o7as6vh.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/294nofbllb2fmew7.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/2e1aicr8n1hrvxj5.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/2eapzldhd2ewsb6z.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/2i48ot7xsxqk3n40.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/2j1ct2y2ser8pc8z.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/2pwau099qjnf1ybu.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/2wyapog92nsfrkr1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/2zch877gwq094n7.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/2zjkla8i2jy3czkw.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/37outlgcak7b0hdl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/3b3pr253zwr5g0fh.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/3h4hnhhic21umsp9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/3hr6ogjo77t76l6y.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/3xx6m308t5yezdnq.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/45bsyz3pkcwhxp2w.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/489r1c6uti4xb8z5.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/4bumg66akipsc06i.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/4gp3axmuxcwth9u9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/4i0btqzf3gjwhcfn.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/4i1zdnu148ivc45a.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/50gonnba9egcx41d.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/51drapvs5u5hpz9h.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/52700eaak3s2u1bm.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/52kzm4ka1d2grr5v.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/56980sjlu78uovek.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/5fiag8dyjqhy5e9i.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/cacdahffsuk7e9v.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/cnl0pfte319iex9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/fns3j2an4r22kkd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/pbgemm1piee6eel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/wtu2rny4zp9lotd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn-3t2ofnqotpfhm/wz1omgmo0i21ko.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/example-1v6ngtvc79cuz/s-fetbjco2qf-1ln22pn.lock" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <folding>
+                <element signature="e#5451#5452#0" expanded="true" />
+                <element signature="e#5484#5485#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/string_utils/mod.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/string_utils/calculation.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sub_module/mod.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sub_module/bar.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding>
+                <element signature="e#13#14#0" expanded="true" />
+                <element signature="e#47#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/restaurant/src/front_of_house/hosting.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/restaurant/src/front_of_house.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#135#136#0" expanded="true" />
+                <element signature="e#185#186#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sub_module/foo.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
+              <folding>
+                <element signature="e#13#14#0" expanded="true" />
+                <element signature="e#47#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/single_module.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
+              <folding>
+                <element signature="e#13#14#0" expanded="true" />
+                <element signature="e#36#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hello</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ref.rs" />
+        <option value="$PROJECT_DIR$/src/restaurant/lib.rs" />
+        <option value="$PROJECT_DIR$/src/restaurant/front_of_house.rs" />
+        <option value="$PROJECT_DIR$/src/service/mod.rs" />
+        <option value="$PROJECT_DIR$/src/restaurant/src/lib.rs" />
+        <option value="$PROJECT_DIR$/src/restaurant/src/front_of_house.rs" />
+        <option value="$PROJECT_DIR$/src/restaurant/src/front_of_house/hosting.rs" />
+        <option value="$PROJECT_DIR$/src/sub_module/bar.rs" />
+        <option value="$PROJECT_DIR$/src/sub_module/mod.rs" />
+        <option value="$PROJECT_DIR$/src/restaurant/Cargo.toml" />
+        <option value="$PROJECT_DIR$/src/single_module.rs" />
+        <option value="$PROJECT_DIR$/src/sub_module/foo.rs" />
+        <option value="$PROJECT_DIR$/src/string_utils/mod.rs" />
+        <option value="$PROJECT_DIR$/src/main.rs" />
+        <option value="$PROJECT_DIR$/src/string_utils/calculation.rs" />
+      </list>
+    </option>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="ufXJcMzH" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/example.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/../rust-grpc/rust-grpc.iml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="331" />
+    <option name="y" value="68" />
+    <option name="width" value="1440" />
+    <option name="height" value="827" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="string_utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sub_module" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/ref.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/restaurant/front_of_house.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/restaurant/front_of_house/hosting.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/restaurant/lib.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/restaurant/src/front_of_house.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/restaurant/src/front_of_house/hosting.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/restaurant/src/hosting.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/thuyenpt/Desktop/study/learn-lang/rust/example/src/service/mod.rs" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/restaurant/src/front_of_house" />
+      <recent name="$PROJECT_DIR$/src/restaurant/src" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/restaurant/front_of_house" />
+      <recent name="$PROJECT_DIR$/src/res" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run example" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package example --bin example" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo Command.Run example" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f0bb5d7-40b0-4449-86d5-4be9cd863a7c" name="Default Changelist" comment="" />
+      <created>1565193648151</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565193648151</updated>
+      <workItem from="1565193649483" duration="1007000" />
+      <workItem from="1565230115729" duration="8720000" />
+      <workItem from="1565664432370" duration="5712000" />
+    </task>
+    <task id="LOCAL-00001" summary="fucking module">
+      <created>1565253290756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565253290756</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fucking module">
+      <created>1565254204728</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565254204728</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15439000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="331" y="68" width="1440" height="827" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3292517" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Cargo" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fucking module" />
+    <option name="LAST_COMMIT_MESSAGE" value="fucking module" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ref/rs.java" />
+    <entry file="file://$PROJECT_DIR$/src/ref.rs" />
+    <entry file="file://$PROJECT_DIR$/Cargo.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cargo.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/restaurant/src/main.rs" />
+    <entry file="file://$PROJECT_DIR$/src/restaurant/lib.rs" />
+    <entry file="file://$PROJECT_DIR$/src/service/mod.rs" />
+    <entry file="file://$PROJECT_DIR$/src/restaurant/Cargo.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/restaurant/src/lib.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/restaurant/src/front_of_house/hosting.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/restaurant/src/front_of_house.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#135#136#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/single_module.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#13#14#0" expanded="true" />
+            <element signature="e#36#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sub_module/foo.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#13#14#0" expanded="true" />
+            <element signature="e#47#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sub_module/bar.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding>
+            <element signature="e#13#14#0" expanded="true" />
+            <element signature="e#47#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <element signature="e#5451#5452#0" expanded="true" />
+            <element signature="e#5484#5485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sub_module/mod.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/string_utils/mod.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/string_utils/calculation.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

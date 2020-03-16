@@ -1,7 +1,7 @@
 use std::f32::consts;
-use std::io::{stdin};
 mod single_module;
 mod sub_module;
+mod string_utils;
 
 static _PI:f32 = 3.14;
 static _NAME:&'static str = "Constant";
@@ -88,20 +88,20 @@ fn main() {
     enum LANGUAGES {Java, C, Rust}
     let _enum_lang = LANGUAGES::Java;
 
-    println!("Input your name: ");
-    let mut buf = String::new();
-    stdin().read_line(& mut buf).ok().expect("error!");
-    println!("Hello {}", buf);
-
-    println!("Input your birth year: ");
-    let mut buffer = String::new();
-    stdin().read_line(& mut buffer).ok().expect("error!");
-
-    let my_year: Result<u32, _> = buffer.trim().parse();
-    match my_year {
-        Ok(y) => println!("Birth year {}", y),
-        Err(e) => println!("Error {}", e),
-    }
+//    println!("Input your name: ");
+//    let mut buf = String::new();
+//    stdin().read_line(& mut buf).ok().expect("error!");
+//    println!("Hello {}", buf);
+//
+//    println!("Input your birth year: ");
+//    let mut buffer = String::new();
+//    stdin().read_line(& mut buffer).ok().expect("error!");
+//
+//    let my_year: Result<u32, _> = buffer.trim().parse();
+//    match my_year {
+//        Ok(y) => println!("Birth year {}", y),
+//        Err(e) => println!("Error {}", e),
+//    }
 
     let current_lang : &str = match _enum_lang {
         LANGUAGES::Java => "Java",
@@ -184,6 +184,16 @@ fn main() {
     println!("Len of is {}", len2);
 
     sub_module::bar::bar();
+
+    let s = String::from("Hello");
+    let r1 = &s;
+    let r2 = &s;
+    println!("Reference {} {}", r1, r2);
+    let _r3 = & s;
+
+    println!("{}", r2);
+
+
 }
 
 fn calculate_length(str: &str) -> usize {
