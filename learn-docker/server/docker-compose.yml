@@ -1,0 +1,6 @@
+version: '2'
+services:
+  myserver:
+    image: myservice
+    ports:
+        - "8080:8080"

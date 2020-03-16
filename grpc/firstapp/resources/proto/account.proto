@@ -1,0 +1,52 @@
+syntax = "proto3";
+option java_multiple_files=true;
+package firstapp.proto;
+
+import "common.proto";
+
+enum AccountStatus {
+    DISABLED = 0;
+    ENABLED = 1;
+}
+
+enum AccountType {
+    USER = 0;
+    BANK = 1;
+    MERCHANT = 2;
+}
+
+message Account {
+    string acno = 1;
+    int64 uid = 2;
+    string cino = 3;
+    string memo = 4;
+    string created_time = 5;
+    AccountStatus status = 6;
+    int64 balance = 7;
+}
+
+message CreateAccountRequest {
+    // zas account id
+    string acno = 1;
+    // app user id
+    int64 uid = 2;
+    // customer unique number (phone)
+    string cino = 3;
+    // user remark
+    string memo = 4;
+    AccountStatus status = 5;
+}
+
+message CreateAccountResponse {
+    Status status = 1;
+    Account data = 2;
+}
+
+message AccountQueryRequest {
+    string acno = 1;
+}
+
+message AccountResponse {
+    Status status = 1;
+    Account data = 2;
+}
