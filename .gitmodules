@@ -1,3 +1,6 @@
 [submodule "java-projects"]
 	path = java-projects
 	url = https://github.com/billhcmus/java-projects
+[submodule "golang-journey"]
+	path = golang-journey
+	url = https://github.com/billhcmus/golang-journey
