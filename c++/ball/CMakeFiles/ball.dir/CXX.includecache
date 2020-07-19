@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/thuyenpt/Desktop/ball/include/server.h
+
+/Users/thuyenpt/Desktop/ball/main.cpp
+iostream
+-
+include/server.h
+/Users/thuyenpt/Desktop/ball/include/server.h
+

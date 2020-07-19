@@ -1,0 +1,3 @@
+/Users/thuyenpt/Desktop/ball/CMakeFiles/rebuild_cache.dir
+/Users/thuyenpt/Desktop/ball/CMakeFiles/edit_cache.dir
+/Users/thuyenpt/Desktop/ball/CMakeFiles/ball.dir

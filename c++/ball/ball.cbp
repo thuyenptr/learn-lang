@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ball"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/thuyenpt/Desktop/ball"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/thuyenpt/Desktop/ball"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/thuyenpt/Desktop/ball"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ball">
+				<Option output="/Users/thuyenpt/Desktop/ball/ball" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/thuyenpt/Desktop/ball"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 ball"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ball/fast">
+				<Option output="/Users/thuyenpt/Desktop/ball/ball" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/thuyenpt/Desktop/ball"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 ball/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/thuyenpt/Desktop/ball/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/thuyenpt/Desktop/ball/include/Server.cpp">
+			<Option target="ball"/>
+		</Unit>
+		<Unit filename="/Users/thuyenpt/Desktop/ball/include/Server.h">
+			<Option target="ball"/>
+		</Unit>
+		<Unit filename="/Users/thuyenpt/Desktop/ball/main.cpp">
+			<Option target="ball"/>
+		</Unit>
+		<Unit filename="/Users/thuyenpt/Desktop/ball/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
